@@ -884,107 +884,75 @@ footer p {
 
 }
 /* =========================================
-   ABYSS ATLAS — LIGHTER OCEAN THEME
-   KEEP THIS AT THE VERY END
+   ABYSS ATLAS — BALANCED OCEAN THEME
 ========================================= */
 
 html {
-    background: #1590b2 !important;
+    background: #083b52 !important;
 }
 
 body {
     background:
         linear-gradient(
             180deg,
-            #38b9d4 0%,
-            #27a5c4 18%,
-            #1685a8 40%,
-            #0d6688 62%,
-            #07506f 80%,
-            #04384f 100%
+            #147894 0%,
+            #0f6985 18%,
+            #0a5873 40%,
+            #07465f 62%,
+            #05364c 82%,
+            #03283b 100%
         ) !important;
-
-    background-color: #1685a8 !important;
 
     color: #f7ffff;
 }
 
-/* Remove a camada escura antiga */
 body::before {
     display: none !important;
 }
 
 
-/* NAVBAR MAIS CLARA */
+/* NAVBAR */
 
 .navbar {
     background:
-        rgba(4, 54, 75, 0.58) !important;
+        rgba(3, 35, 50, 0.72) !important;
 
     border-color:
-        rgba(190, 255, 250, 0.28) !important;
-
-    box-shadow:
-        0 15px 45px
-        rgba(0, 57, 76, 0.16) !important;
+        rgba(154, 236, 235, 0.22) !important;
 }
 
 
-/* HERO MAIS CLARO */
+/* HERO */
 
 .hero {
     background:
         linear-gradient(
             135deg,
-            rgba(35, 166, 194, 0.78),
-            rgba(8, 101, 137, 0.70)
+            rgba(14, 103, 129, 0.78),
+            rgba(5, 57, 79, 0.82)
         ) !important;
 
     border-color:
-        rgba(190, 255, 250, 0.30) !important;
+        rgba(154, 236, 235, 0.24) !important;
 
     box-shadow:
-        0 25px 60px
-        rgba(0, 50, 70, 0.18) !important;
+        0 25px 65px
+        rgba(0, 25, 40, 0.24) !important;
 }
 
 
-/* TEXTO DO HERO */
-
-.hero-text {
-    color:
-        rgba(240, 255, 255, 0.88) !important;
-}
-
-
-/* CARDS MAIS CLAROS */
+/* CARDS */
 
 .card {
     background:
         linear-gradient(
             145deg,
-            rgba(17, 113, 139, 0.72),
-            rgba(7, 78, 105, 0.68)
+            rgba(8, 72, 92, 0.82),
+            rgba(4, 48, 68, 0.88)
         ) !important;
 
     border-color:
-        rgba(188, 255, 249, 0.24) !important;
-
-    box-shadow:
-        0 16px 40px
-        rgba(0, 45, 65, 0.15) !important;
-}
-
-
-.card p {
-    color:
-        rgba(226, 249, 250, 0.82) !important;
-}
-
-
-.card small {
-    color:
-        rgba(196, 231, 235, 0.72) !important;
+        rgba(154, 236, 235, 0.18) !important;
 }
 
 
@@ -992,27 +960,27 @@ body::before {
 
 .zone-sunlight {
     background:
-        rgba(52, 183, 207, 0.72) !important;
+        rgba(17, 115, 141, 0.72) !important;
 }
 
 .zone-twilight {
     background:
-        rgba(27, 137, 171, 0.72) !important;
+        rgba(10, 86, 112, 0.76) !important;
 }
 
 .zone-midnight {
     background:
-        rgba(13, 101, 137, 0.75) !important;
+        rgba(6, 66, 91, 0.82) !important;
 }
 
 .zone-abyss {
     background:
-        rgba(7, 74, 104, 0.80) !important;
+        rgba(4, 48, 70, 0.88) !important;
 }
 
 .zone-hadal {
     background:
-        rgba(4, 52, 76, 0.88) !important;
+        rgba(2, 32, 49, 0.94) !important;
 }
 
 
@@ -1020,8 +988,8 @@ body::before {
 
 footer {
     background:
-        rgba(4, 54, 75, 0.60) !important;
+        rgba(3, 35, 50, 0.76) !important;
 
     border-color:
-        rgba(190, 255, 250, 0.22) !important;
+        rgba(154, 236, 235, 0.18) !important;
 }
