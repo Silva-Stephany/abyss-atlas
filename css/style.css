@@ -883,3 +883,145 @@ footer p {
     }
 
 }
+/* =========================================
+   ABYSS ATLAS — LIGHTER OCEAN THEME
+   KEEP THIS AT THE VERY END
+========================================= */
+
+html {
+    background: #1590b2 !important;
+}
+
+body {
+    background:
+        linear-gradient(
+            180deg,
+            #38b9d4 0%,
+            #27a5c4 18%,
+            #1685a8 40%,
+            #0d6688 62%,
+            #07506f 80%,
+            #04384f 100%
+        ) !important;
+
+    background-color: #1685a8 !important;
+
+    color: #f7ffff;
+}
+
+/* Remove a camada escura antiga */
+body::before {
+    display: none !important;
+}
+
+
+/* NAVBAR MAIS CLARA */
+
+.navbar {
+    background:
+        rgba(4, 54, 75, 0.58) !important;
+
+    border-color:
+        rgba(190, 255, 250, 0.28) !important;
+
+    box-shadow:
+        0 15px 45px
+        rgba(0, 57, 76, 0.16) !important;
+}
+
+
+/* HERO MAIS CLARO */
+
+.hero {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(35, 166, 194, 0.78),
+            rgba(8, 101, 137, 0.70)
+        ) !important;
+
+    border-color:
+        rgba(190, 255, 250, 0.30) !important;
+
+    box-shadow:
+        0 25px 60px
+        rgba(0, 50, 70, 0.18) !important;
+}
+
+
+/* TEXTO DO HERO */
+
+.hero-text {
+    color:
+        rgba(240, 255, 255, 0.88) !important;
+}
+
+
+/* CARDS MAIS CLAROS */
+
+.card {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(17, 113, 139, 0.72),
+            rgba(7, 78, 105, 0.68)
+        ) !important;
+
+    border-color:
+        rgba(188, 255, 249, 0.24) !important;
+
+    box-shadow:
+        0 16px 40px
+        rgba(0, 45, 65, 0.15) !important;
+}
+
+
+.card p {
+    color:
+        rgba(226, 249, 250, 0.82) !important;
+}
+
+
+.card small {
+    color:
+        rgba(196, 231, 235, 0.72) !important;
+}
+
+
+/* DEPTH ZONES */
+
+.zone-sunlight {
+    background:
+        rgba(52, 183, 207, 0.72) !important;
+}
+
+.zone-twilight {
+    background:
+        rgba(27, 137, 171, 0.72) !important;
+}
+
+.zone-midnight {
+    background:
+        rgba(13, 101, 137, 0.75) !important;
+}
+
+.zone-abyss {
+    background:
+        rgba(7, 74, 104, 0.80) !important;
+}
+
+.zone-hadal {
+    background:
+        rgba(4, 52, 76, 0.88) !important;
+}
+
+
+/* FOOTER */
+
+footer {
+    background:
+        rgba(4, 54, 75, 0.60) !important;
+
+    border-color:
+        rgba(190, 255, 250, 0.22) !important;
+}
