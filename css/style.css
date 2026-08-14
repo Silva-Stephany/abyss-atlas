@@ -884,112 +884,275 @@ footer p {
 
 }
 /* =========================================
-   ABYSS ATLAS — BALANCED OCEAN THEME
+   ABYSS ATLAS — FINAL OCEAN DEPTH THEME
 ========================================= */
 
 html {
-    background: #083b52 !important;
+    background: #020811;
 }
 
 body {
     background:
         linear-gradient(
             180deg,
-            #147894 0%,
-            #0f6985 18%,
-            #0a5873 40%,
-            #07465f 62%,
-            #05364c 82%,
-            #03283b 100%
+            #0d718d 0%,
+            #095a76 18%,
+            #06445f 38%,
+            #043047 58%,
+            #031d30 76%,
+            #020e1b 90%,
+            #01070e 100%
         ) !important;
 
-    color: #f7ffff;
+    color: #f3ffff;
 }
+
+
+/* Subtle underwater particles */
 
 body::before {
-    display: none !important;
+    content: "";
+
+    display: block !important;
+
+    position: fixed;
+    inset: 0;
+
+    pointer-events: none;
+
+    background-image:
+        radial-gradient(
+            circle,
+            rgba(163, 255, 244, 0.30) 1px,
+            transparent 1px
+        );
+
+    background-size:
+        55px 55px;
+
+    opacity: 0.12 !important;
+
+    z-index: -1;
 }
 
 
-/* NAVBAR */
+/* =========================================
+   NAVIGATION
+========================================= */
 
 .navbar {
     background:
-        rgba(3, 35, 50, 0.72) !important;
+        rgba(2, 17, 29, 0.78) !important;
 
     border-color:
-        rgba(154, 236, 235, 0.22) !important;
+        rgba(77, 215, 213, 0.17) !important;
+
+    box-shadow:
+        0 16px 45px
+        rgba(0, 8, 18, 0.28) !important;
+
+    backdrop-filter:
+        blur(18px);
 }
 
 
-/* HERO */
+/* =========================================
+   HERO — CLOSER TO THE SURFACE
+========================================= */
 
 .hero {
     background:
         linear-gradient(
             135deg,
-            rgba(14, 103, 129, 0.78),
-            rgba(5, 57, 79, 0.82)
+            rgba(10, 103, 128, 0.78),
+            rgba(5, 66, 91, 0.82),
+            rgba(3, 39, 59, 0.88)
         ) !important;
 
     border-color:
-        rgba(154, 236, 235, 0.24) !important;
+        rgba(129, 239, 232, 0.19) !important;
 
     box-shadow:
-        0 25px 65px
-        rgba(0, 25, 40, 0.24) !important;
+        0 30px 80px
+        rgba(0, 10, 22, 0.30) !important;
 }
 
 
-/* CARDS */
+/* Soft light entering from surface */
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    top: -180px;
+    left: 12%;
+
+    width: 700px;
+    height: 500px;
+
+    background:
+        radial-gradient(
+            ellipse,
+            rgba(111, 238, 232, 0.15),
+            rgba(65, 190, 203, 0.06) 45%,
+            transparent 70%
+        );
+
+    transform: rotate(-12deg);
+
+    pointer-events: none;
+}
+
+
+/* Bioluminescent glow */
+
+.hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 550px;
+    height: 550px;
+
+    right: -150px;
+    bottom: -260px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(41, 211, 209, 0.14),
+            transparent 67%
+        );
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   TEXT
+========================================= */
+
+.hero-text {
+    color:
+        rgba(221, 241, 244, 0.82) !important;
+}
+
+.eyebrow {
+    color: #59e1dd;
+}
+
+.hero h1 span {
+    color: #b6fff7;
+
+    text-shadow:
+        0 0 30px
+        rgba(41, 211, 209, 0.16);
+}
+
+
+/* =========================================
+   KPI CARDS
+========================================= */
 
 .card {
     background:
         linear-gradient(
             145deg,
-            rgba(8, 72, 92, 0.82),
-            rgba(4, 48, 68, 0.88)
+            rgba(5, 48, 65, 0.84),
+            rgba(2, 27, 43, 0.90)
         ) !important;
 
     border-color:
-        rgba(154, 236, 235, 0.18) !important;
+        rgba(91, 220, 215, 0.14) !important;
+
+    box-shadow:
+        0 18px 45px
+        rgba(0, 8, 18, 0.24) !important;
+}
+
+.card:hover {
+    border-color:
+        rgba(91, 220, 215, 0.34) !important;
+
+    box-shadow:
+        0 22px 55px
+        rgba(0, 8, 18, 0.32),
+        0 0 22px
+        rgba(41, 211, 209, 0.06) !important;
+}
+
+.card p {
+    color:
+        rgba(170, 207, 214, 0.82) !important;
+}
+
+.card small {
+    color:
+        rgba(117, 165, 176, 0.80) !important;
 }
 
 
-/* DEPTH ZONES */
+/* =========================================
+   DEPTH TRANSITION
+========================================= */
 
 .zone-sunlight {
     background:
-        rgba(17, 115, 141, 0.72) !important;
+        linear-gradient(
+            90deg,
+            rgba(10, 103, 128, 0.64),
+            rgba(6, 76, 99, 0.72)
+        ) !important;
 }
 
 .zone-twilight {
     background:
-        rgba(10, 86, 112, 0.76) !important;
+        linear-gradient(
+            90deg,
+            rgba(6, 76, 99, 0.72),
+            rgba(4, 56, 78, 0.80)
+        ) !important;
 }
 
 .zone-midnight {
     background:
-        rgba(6, 66, 91, 0.82) !important;
+        linear-gradient(
+            90deg,
+            rgba(4, 54, 76, 0.82),
+            rgba(3, 38, 58, 0.88)
+        ) !important;
 }
 
 .zone-abyss {
     background:
-        rgba(4, 48, 70, 0.88) !important;
+        linear-gradient(
+            90deg,
+            rgba(3, 36, 55, 0.88),
+            rgba(2, 23, 39, 0.94)
+        ) !important;
 }
 
 .zone-hadal {
     background:
-        rgba(2, 32, 49, 0.94) !important;
+        linear-gradient(
+            90deg,
+            rgba(2, 22, 37, 0.94),
+            rgba(1, 10, 20, 0.98)
+        ) !important;
 }
 
 
-/* FOOTER */
+/* =========================================
+   FOOTER — DEEPEST AREA
+========================================= */
 
 footer {
     background:
-        rgba(3, 35, 50, 0.76) !important;
+        rgba(1, 11, 21, 0.88) !important;
 
     border-color:
-        rgba(154, 236, 235, 0.18) !important;
+        rgba(91, 220, 215, 0.12) !important;
 }
