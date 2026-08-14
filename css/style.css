@@ -51,29 +51,22 @@ html {
 
 
 body {
-
     margin: 0;
-
     min-height: 100vh;
 
-    font-family:
-        var(--font-body);
-
-    color:
-        var(--text);
+    font-family: var(--font-body);
+    color: var(--text);
 
     background:
-        radial-gradient(
-            circle at 50% 0%,
-            rgba(24, 117, 133, 0.22),
-            transparent 34%
-        ),
         linear-gradient(
             180deg,
-            #062d40 0%,
-            #031a29 25%,
-            #020d18 55%,
-            #01060d 100%
+            #1687a8 0%,
+            #0c6f91 15%,
+            #07536f 32%,
+            #063a55 50%,
+            #04263b 68%,
+            #031624 84%,
+            #020a12 100%
         );
 
     overflow-x: hidden;
@@ -235,46 +228,38 @@ main {
 ========================================= */
 
 .hero {
-
     position: relative;
 
-    min-height:
-        78vh;
+    min-height: 78vh;
 
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
 
     gap: 60px;
 
-    padding:
-        80px 48px;
+    padding: 80px 48px;
+    margin-top: 24px;
 
-    margin-top:
-        24px;
-
-    border-radius:
-        26px;
-
-    overflow:
-        hidden;
+    border-radius: 26px;
+    overflow: hidden;
 
     background:
         linear-gradient(
             135deg,
-            rgba(7, 52, 74, 0.72),
-            rgba(2, 10, 22, 0.80)
+            rgba(20, 122, 153, 0.72),
+            rgba(5, 67, 94, 0.76)
         );
 
     border:
         1px solid
-        var(--border);
+        rgba(163, 255, 244, 0.22);
 
     box-shadow:
         0 30px 80px
-        rgba(0, 0, 0, 0.30);
+        rgba(0, 20, 35, 0.25);
+
+    backdrop-filter: blur(12px);
 }
 
 
@@ -575,12 +560,12 @@ main {
     border-radius:
         20px;
 
-    background:
-        linear-gradient(
-            145deg,
-            rgba(7, 38, 51, .80),
-            rgba(3, 17, 29, .86)
-        );
+background:
+    linear-gradient(
+        145deg,
+        rgba(12, 91, 112, 0.65),
+        rgba(6, 54, 76, 0.72)
+    );
 
     border:
         1px solid
