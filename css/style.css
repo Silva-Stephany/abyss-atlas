@@ -2793,3 +2793,761 @@ footer {
     }
 
 }
+/* =========================================
+   DISCOVERIES PAGE
+========================================= */
+
+.discoveries-hero {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    min-height: 650px;
+
+    margin-top: 24px;
+    padding: 75px 55px;
+
+    border-radius: 26px;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(6, 79, 101, .88),
+            rgba(3, 39, 58, .94) 48%,
+            rgba(1, 16, 28, .98)
+        );
+
+    border:
+        1px solid
+        rgba(86, 220, 216, .15);
+}
+
+
+.discoveries-hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 820px;
+}
+
+
+.discoveries-hero h1 {
+    margin: 0;
+
+    font-family: var(--font-title);
+
+    font-size:
+        clamp(3.3rem, 8vw, 7rem);
+
+    line-height: .98;
+}
+
+
+.discoveries-hero-content > p:not(.eyebrow) {
+    max-width: 680px;
+
+    color:
+        rgba(202, 230, 233, .80);
+
+    line-height: 1.8;
+}
+
+
+/* SONAR */
+
+.discovery-sonar {
+    position: relative;
+
+    width: 350px;
+    height: 350px;
+
+    flex-shrink: 0;
+}
+
+
+.sonar-circle,
+.sonar-core {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform:
+        translate(-50%, -50%);
+
+    border-radius: 50%;
+}
+
+
+.sonar-circle {
+    border:
+        1px solid
+        rgba(78, 236, 229, .18);
+}
+
+
+.sonar-one {
+    width: 100px;
+    height: 100px;
+}
+
+
+.sonar-two {
+    width: 210px;
+    height: 210px;
+}
+
+
+.sonar-three {
+    width: 330px;
+    height: 330px;
+}
+
+
+.sonar-core {
+    width: 14px;
+    height: 14px;
+
+    background: #a7fff7;
+
+    box-shadow:
+        0 0 22px #48ded8,
+        0 0 70px rgba(41,211,209,.45);
+}
+
+
+/* KPIs */
+
+.discoveries-kpis {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0,1fr));
+
+    gap: 18px;
+
+    padding: 70px 0 30px;
+}
+
+
+/* SECTIONS */
+
+.discoveries-section {
+    padding: 80px 0;
+}
+
+
+/* DISCOVERY TYPES */
+
+.discovery-types {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0,1fr));
+
+    gap: 18px;
+}
+
+
+.discovery-types article {
+    padding: 28px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(5,47,64,.80),
+            rgba(2,24,39,.91)
+        );
+
+    border:
+        1px solid
+        rgba(86,220,216,.13);
+
+    transition:
+        transform .25s ease,
+        border-color .25s ease;
+}
+
+
+.discovery-types article:hover {
+    transform:
+        translateY(-4px);
+
+    border-color:
+        rgba(86,220,216,.30);
+}
+
+
+.discovery-types span {
+    display: block;
+
+    margin-bottom: 22px;
+
+    color: var(--cyan);
+
+    font-size: 1.8rem;
+}
+
+
+.discovery-types h3 {
+    font-family: var(--font-title);
+}
+
+
+.discovery-types p {
+    color: var(--muted);
+
+    line-height: 1.7;
+}
+
+
+/* PIPELINE */
+
+.discovery-pipeline {
+    padding: 70px 45px;
+
+    margin: 35px 0;
+
+    border-radius: 26px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(4,52,68,.68),
+            rgba(2,22,37,.94)
+        );
+
+    border:
+        1px solid
+        rgba(86,220,216,.13);
+}
+
+
+.pipeline-line {
+    display: flex;
+
+    align-items: stretch;
+
+    gap: 12px;
+
+    margin-top: 40px;
+}
+
+
+.pipeline-line article {
+    position: relative;
+
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 23px;
+
+    border-radius: 18px;
+
+    background:
+        rgba(1,18,30,.50);
+
+    border:
+        1px solid
+        rgba(86,220,216,.10);
+}
+
+
+.pipeline-number {
+    color: #537b84;
+
+    font-family: var(--font-title);
+
+    font-size: .65rem;
+}
+
+
+.pipeline-line article > span {
+    display: block;
+
+    margin: 20px 0;
+
+    font-size: 1.6rem;
+}
+
+
+.pipeline-line h3 {
+    font-family: var(--font-title);
+}
+
+
+.pipeline-line p {
+    color: var(--muted);
+
+    font-size: .82rem;
+
+    line-height: 1.65;
+}
+
+
+.pipeline-arrow {
+    display: flex;
+
+    align-items: center;
+
+    color:
+        rgba(90,225,219,.45);
+}
+
+
+/* EDNA */
+
+.edna-section {
+    display: grid;
+
+    grid-template-columns:
+        .7fr 1.3fr;
+
+    gap: 60px;
+
+    align-items: center;
+
+    min-height: 580px;
+
+    padding: 60px;
+
+    margin: 45px 0;
+
+    border-radius: 26px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(3,38,54,.96),
+            rgba(1,13,24,.99)
+        );
+
+    border:
+        1px solid
+        rgba(86,220,216,.14);
+}
+
+
+.edna-visual {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 380px;
+}
+
+
+.dna-strand {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+
+    width: 180px;
+}
+
+
+.dna-strand span {
+    position: relative;
+
+    display: block;
+
+    width: 100%;
+    height: 2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #52eee7,
+            transparent
+        );
+
+    box-shadow:
+        0 0 15px
+        rgba(41,211,209,.30);
+}
+
+
+.dna-strand span:nth-child(odd) {
+    transform: rotate(25deg);
+}
+
+
+.dna-strand span:nth-child(even) {
+    transform: rotate(-25deg);
+}
+
+
+.edna-content h2 {
+    margin: 0 0 22px;
+
+    font-family: var(--font-title);
+
+    font-size:
+        clamp(2.5rem,5vw,4.4rem);
+}
+
+
+.edna-content > p:not(.eyebrow) {
+    color: var(--muted);
+
+    line-height: 1.8;
+}
+
+
+.edna-badge {
+    display: grid;
+
+    grid-template-columns:
+        100px 1fr;
+
+    gap: 20px;
+
+    align-items: center;
+
+    margin-top: 35px;
+
+    padding: 22px;
+
+    border-radius: 16px;
+
+    background:
+        rgba(41,211,209,.06);
+
+    border:
+        1px solid
+        rgba(86,220,216,.13);
+}
+
+
+.edna-badge span {
+    color: #9efff7;
+
+    font-family: var(--font-title);
+
+    font-size: 1.5rem;
+}
+
+
+.edna-badge p {
+    margin: 0;
+
+    color: var(--muted);
+
+    line-height: 1.6;
+}
+
+
+/* RECORDS */
+
+.records-panel {
+    display: grid;
+
+    grid-template-columns:
+        320px 1fr;
+
+    gap: 50px;
+
+    align-items: center;
+
+    padding: 40px;
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(6,68,84,.62),
+            rgba(2,24,39,.91)
+        );
+
+    border:
+        1px solid
+        rgba(86,220,216,.13);
+}
+
+
+.record-number span,
+.record-number small {
+    display: block;
+}
+
+
+.record-number span {
+    color: var(--cyan);
+
+    font-size: .62rem;
+
+    letter-spacing: 2px;
+}
+
+
+.record-number strong {
+    display: block;
+
+    margin: 8px 0;
+
+    font-family: var(--font-title);
+
+    font-size: 3rem;
+}
+
+
+.record-number small {
+    color: var(--muted);
+
+    line-height: 1.5;
+}
+
+
+.record-flow {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+}
+
+
+.record-flow div {
+    flex: 1;
+
+    padding: 16px 8px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    background:
+        rgba(1,18,30,.55);
+
+    color:
+        rgba(216,245,245,.85);
+
+    font-family: var(--font-title);
+
+    font-size: .68rem;
+}
+
+
+.record-flow span {
+    color: var(--cyan);
+}
+
+
+/* EXAMPLES */
+
+.discovery-example-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0,1fr));
+
+    gap: 18px;
+}
+
+
+.discovery-example-grid article {
+    min-height: 260px;
+
+    padding: 28px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(5,55,71,.70),
+            rgba(2,23,38,.94)
+        );
+
+    border:
+        1px solid
+        rgba(86,220,216,.12);
+}
+
+
+.example-tag {
+    color: var(--cyan);
+
+    font-size: .58rem;
+
+    letter-spacing: 1.7px;
+}
+
+
+.discovery-example-grid h3 {
+    margin-top: 30px;
+
+    font-family: var(--font-title);
+
+    font-size: 1.4rem;
+}
+
+
+.discovery-example-grid p {
+    color: var(--muted);
+
+    line-height: 1.7;
+}
+
+
+/* ENDING */
+
+.discoveries-ending {
+    position: relative;
+
+    padding: 140px 30px;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+
+.unknown-pulse {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    width: 250px;
+    height: 250px;
+
+    transform:
+        translate(-50%,-50%);
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(41,211,209,.10),
+            transparent 65%
+        );
+
+    filter: blur(8px);
+}
+
+
+.discoveries-ending h2 {
+    position: relative;
+
+    max-width: 900px;
+
+    margin: 15px auto;
+
+    font-family: var(--font-title);
+
+    font-size:
+        clamp(2.3rem,5vw,4.3rem);
+}
+
+
+.discoveries-ending > p:last-child {
+    position: relative;
+
+    max-width: 670px;
+
+    margin: auto;
+
+    color: var(--muted);
+
+    line-height: 1.7;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+
+    .discoveries-kpis {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+
+    .pipeline-line {
+        display: grid;
+
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+
+    .pipeline-arrow {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 850px) {
+
+    .discoveries-hero {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .discovery-sonar {
+        display: none;
+    }
+
+
+    .discovery-types,
+    .discovery-example-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .edna-section,
+    .records-panel {
+        grid-template-columns: 1fr;
+    }
+
+
+    .record-flow {
+        flex-direction: column;
+    }
+
+
+    .record-flow div {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .discoveries-kpis,
+    .pipeline-line {
+        grid-template-columns: 1fr;
+    }
+
+
+    .discoveries-hero {
+        padding: 55px 28px;
+    }
+
+
+    .edna-section {
+        padding: 35px 25px;
+    }
+
+}
