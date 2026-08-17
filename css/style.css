@@ -4207,3 +4207,521 @@ footer {
     }
 
 }
+/* =========================================
+   ABYSS ATLAS ABOUT PAGE
+========================================= */
+
+.about-abyss-hero {
+    min-height: 560px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: 24px;
+
+    padding: 70px 55px;
+
+    border-radius: 26px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(8, 93, 113, .82),
+            rgba(3, 43, 62, .94) 50%,
+            rgba(1, 18, 30, .98)
+        );
+
+    border:
+        1px solid
+        rgba(86,220,216,.15);
+}
+
+
+.about-abyss-hero h1 {
+    max-width: 950px;
+
+    margin: 0;
+
+    font-family:
+        var(--font-title);
+
+    font-size:
+        clamp(3.2rem,7vw,6.5rem);
+
+    line-height: 1;
+}
+
+
+.about-abyss-hero > p:last-child {
+    max-width: 700px;
+
+    margin-top: 28px;
+
+    color:
+        rgba(207,233,235,.80);
+
+    line-height: 1.8;
+}
+
+
+/* MAIN ABOUT CARDS */
+
+.about-abyss-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,minmax(0,1fr));
+
+    gap: 18px;
+
+    padding: 75px 0;
+}
+
+
+.about-abyss-grid article {
+    padding: 32px;
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(5,50,67,.80),
+            rgba(2,25,40,.92)
+        );
+
+    border:
+        1px solid
+        rgba(86,220,216,.13);
+}
+
+
+.about-abyss-grid article > span {
+    display: block;
+
+    margin-bottom: 25px;
+
+    font-size: 2rem;
+}
+
+
+.about-abyss-grid h2 {
+    font-family:
+        var(--font-title);
+}
+
+
+.about-abyss-grid p {
+    color:
+        var(--muted);
+
+    line-height: 1.75;
+}
+
+
+/* STORY */
+
+.abyss-story {
+    display: grid;
+
+    grid-template-columns:
+        1.3fr .7fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+    padding: 60px;
+
+    margin: 35px 0 80px;
+
+    border-radius: 26px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(6,69,86,.66),
+            rgba(2,24,39,.94)
+        );
+
+    border:
+        1px solid
+        rgba(86,220,216,.14);
+}
+
+
+.abyss-story h2 {
+    margin-top: 0;
+
+    font-family:
+        var(--font-title);
+
+    font-size:
+        clamp(2.2rem,4vw,3.7rem);
+}
+
+
+.abyss-story p {
+    color:
+        var(--muted);
+
+    line-height: 1.8;
+}
+
+
+.story-depth {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+
+.story-depth span {
+    color: #91e4e1;
+
+    font-family:
+        var(--font-title);
+
+    font-size: .68rem;
+
+    letter-spacing: 1.5px;
+}
+
+
+.story-depth div {
+    width: 1px;
+    height: 75px;
+
+    margin: 12px 0;
+
+    background:
+        linear-gradient(
+            #40d5d0,
+            rgba(64,213,208,.12)
+        );
+}
+
+
+/* FEATURES */
+
+.about-abyss-section {
+    padding: 70px 0;
+}
+
+
+.about-feature-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,minmax(0,1fr));
+
+    gap: 16px;
+}
+
+
+.about-feature-grid article {
+    min-height: 190px;
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+    background:
+        rgba(3,32,48,.66);
+
+    border:
+        1px solid
+        rgba(86,220,216,.11);
+}
+
+
+.about-feature-grid article > span {
+    display: block;
+
+    margin-bottom: 20px;
+
+    color: var(--cyan);
+
+    font-size: 1.6rem;
+}
+
+
+.about-feature-grid strong {
+    display: block;
+
+    font-family:
+        var(--font-title);
+}
+
+
+.about-feature-grid p {
+    color:
+        var(--muted);
+
+    font-size: .82rem;
+
+    line-height: 1.6;
+}
+
+
+/* TECHNOLOGIES */
+
+.abyss-tech-list {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+
+.abyss-tech-list span {
+    padding: 11px 16px;
+
+    border-radius: 999px;
+
+    background:
+        rgba(41,211,209,.07);
+
+    border:
+        1px solid
+        rgba(86,220,216,.14);
+
+    color: #b5efed;
+
+    font-size: .78rem;
+}
+
+
+/* SOURCES */
+
+.abyss-sources {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+
+    padding: 50px;
+
+    margin: 30px 0;
+
+    border-radius: 24px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(3,43,60,.88),
+            rgba(1,17,29,.97)
+        );
+
+    border:
+        1px solid
+        rgba(86,220,216,.13);
+}
+
+
+.abyss-sources h2 {
+    font-family:
+        var(--font-title);
+
+    font-size:
+        clamp(2rem,4vw,3.2rem);
+}
+
+
+.abyss-sources p {
+    color:
+        var(--muted);
+
+    line-height: 1.8;
+}
+
+
+.source-list {
+    display: grid;
+
+    gap: 10px;
+}
+
+
+.source-list span {
+    padding: 16px;
+
+    border-radius: 12px;
+
+    background:
+        rgba(41,211,209,.045);
+
+    border:
+        1px solid
+        rgba(86,220,216,.09);
+
+    color:
+        rgba(218,247,247,.82);
+}
+
+
+/* AUTHOR */
+
+.abyss-author {
+    display: flex;
+
+    align-items: center;
+
+    gap: 28px;
+
+    margin: 70px 0 30px;
+
+    padding: 38px;
+
+    border-radius: 24px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(6,81,96,.62),
+            rgba(2,25,41,.92)
+        );
+
+    border:
+        1px solid
+        rgba(86,220,216,.14);
+}
+
+
+.author-symbol {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 80px;
+    height: 80px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background:
+        rgba(41,211,209,.08);
+
+    color: #92fff6;
+
+    font-size: 2rem;
+
+    box-shadow:
+        0 0 35px
+        rgba(41,211,209,.12);
+}
+
+
+.abyss-author small {
+    color: var(--cyan);
+
+    font-size: .60rem;
+
+    letter-spacing: 1.8px;
+}
+
+
+.abyss-author h2 {
+    margin: 7px 0;
+
+    font-family:
+        var(--font-title);
+}
+
+
+.abyss-author p {
+    margin-bottom: 0;
+
+    color:
+        var(--muted);
+}
+
+
+/* END */
+
+.about-abyss-ending {
+    padding: 130px 30px;
+
+    text-align: center;
+}
+
+
+.about-abyss-ending h2 {
+    max-width: 850px;
+
+    margin: 12px auto;
+
+    font-family:
+        var(--font-title);
+
+    font-size:
+        clamp(2.5rem,6vw,5rem);
+}
+
+
+.about-abyss-ending > p:last-child {
+    color:
+        var(--muted);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+
+    .about-abyss-grid,
+    .abyss-story,
+    .abyss-sources {
+        grid-template-columns: 1fr;
+    }
+
+
+    .about-feature-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+
+    .story-depth {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .about-abyss-grid,
+    .about-feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .about-abyss-hero {
+        padding: 55px 28px;
+    }
+
+
+    .abyss-story,
+    .abyss-sources {
+        padding: 30px 24px;
+    }
+
+
+    .abyss-author {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+}
